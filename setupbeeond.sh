@@ -20,3 +20,6 @@ sudo mkdir $MOUNT_ROOT/beeond
 sudo chmod 777 $MOUNT_ROOT/beeond
 sudo mkdir /beeond
 sudo chmod 777 /beeond
+cat << EOF | sudo tee > /etc/pdsh/rcmd_default
+ssh
+EOF
